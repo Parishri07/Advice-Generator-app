@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](.screenshot.png)
+![](screenshot.png)
 
 ### Links
 
@@ -40,7 +40,7 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here]([https://www.your-site.com](https://generating-advice-app.netlify.app/))
+- Website - [Parishri]([https://www.your-site.com](https://generating-advice-app.netlify.app/))
 - Frontend Mentor - [@Parishri07](https://www.frontendmentor.io/profile/Parishri07)
 - LinkedIn - [Parishri Shah](https://www.linkedin.com/in/parishri-shah-0786a9263/)
 

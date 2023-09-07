@@ -1,40 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | Advice generator app</title>
 
   <style>
-    body{
-      font-size: 25px;
+    body {
       text-align: center;
     }
-    .attribution { 
-      font-size: 11px; text-align: center; 
+
+    .container {
+      /* position:absolute; */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 60vw;
+      height: 60vh;
+      color: hsl(150, 100%, 66%);
+      background-color: hsl(218, 23%, 16%);
+      text-align: center;
+      margin: 125px auto;
     }
-    .attribution a { 
-      color: hsl(228, 45%, 44%); 
+
+    .box {
+      padding: 15px;
+      /* padding-bottom: 0; */
+      width: 20vw;
+      height: 18vh;
+      background-color: hsl(217, 19%, 24%);
+      border-radius: 10px;
+      font-size: 15px;
+      font-family: 'Manrope', sans-serif;
+    }
+
+    .advice {
+      color: white;
+      font-size: 20px;
+      margin: 13px;
+    }
+
+    #HR{
+      width:15vw;
+      margin-bottom: 5px;
+    }
+
+    #dice {
+      background-color: hsl(150, 100%, 66%);
+      border-radius: 20px;
+      border-color: none;
+      padding: 7px;
+    }
+
+    #dice img {
+      width: 15px;
+      height: 15px;
+    }
+
+    .glow {
+      animation: glow-animation 0.7s ease infinite;
+    }
+
+    @keyframes glow-animation {
+      0% {
+        box-shadow: 0 0 10px hsl(150, 100%, 66%);
+      }
+
+      50% {
+        box-shadow: 0 0 20px hsl(150, 100%, 66%), 0 0 10px hsl(150, 100%, 66%);
+      }
+
+      100% {
+        box-shadow: 0 0 10px hsl(150, 100%, 66%);
+      }
     }
   </style>
 </head>
+
 <body>
   <div class="container">
-    Advice <div class="adviceNumber"></div>
-     <div class="advice"></div>
-    <button id="dice"><img src="images/icon-dice.svg" alt=""></button>
-  </div>
+    <div class="box">
+      Advice #<span class="adviceNumber">117</span>
+      <div class="advice">"It's easy to sit up and take notice, what's difficult is getting up and taking action."</div>
+      <!-- <hr class="breaker"> -->
+      <div><img id="HR" src="images/pattern-divider-desktop.svg" alt=""></div>
+      <button id="dice"><img src="images/icon-dice.svg" alt=""></button>
+    </div>
 
-  "<!-- Advice text goes here -->"
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
   </div>
 
   <script src="index.js"></script>
 </body>
+
 </html>

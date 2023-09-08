@@ -80,6 +80,35 @@
         box-shadow: 0 0 10px hsl(150, 100%, 66%);
       }
     }
+
+      @media screen and (max-width: 3000px) {
+        .advice{
+          font-size: 25px;
+        }
+      }
+      @media screen and (max-width: 1500px) {
+         .box{
+          width: 30vw;
+          height: 20vh;
+         }
+         .advice{
+          font-size: 20px;
+        }
+      }
+      @media screen and (max-width: 1000px) {
+        .advice{
+          font-size: 15px;
+        }
+      }
+      @media screen and (max-width: 500px) {
+        .container{
+          width: 90vw;
+        }
+        .box{
+          width:70vw;
+        }
+      }
+   
   </style>
 </head>
 
@@ -88,7 +117,6 @@
     <div class="box">
       Advice #<span class="adviceNumber">117</span>
       <div class="advice">"It's easy to sit up and take notice, what's difficult is getting up and taking action."</div>
-      <!-- <hr class="breaker"> -->
       <div><img id="HR" src="images/pattern-divider-desktop.svg" alt=""></div>
       <button id="dice"><img src="images/icon-dice.svg" alt=""></button>
     </div>
